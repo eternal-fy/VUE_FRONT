@@ -15,6 +15,8 @@
       </ul>
     </div>
   </div>
+  <button @keyup.enter.exact="alert('hehe')">keyboardClick</button>
+  <button @mousedown.right="alert('hehe')">MouseClick</button>
 
 </template>
 
@@ -34,6 +36,9 @@ export default {
   methods: {
     add() {
       this.items.push(this.text)
+    },
+    alert(mes){
+      alert(mes)
     }
   },
 
